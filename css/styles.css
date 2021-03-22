@@ -1,10 +1,10 @@
 @charset "UTF-8";
 
 /**
- * @author Prénom Nom courriel
+ * @author Camille Marceau camillee@hotmail.ca
  *
  * TABLE DES MATIERES
- * Normalize
+ * Normalize (link)
  * Utilitaires
  * Charte typographique
  * Grille
@@ -17,21 +17,21 @@
  */
 
 
-/* Normalize
-   ========================================================================== */
-@import url(_normalize.css);
-
 /* Utilitaires
    ========================================================================== */
-
+@import url(_utilitaires.css);
 
 /* Charte typographique
    ========================================================================== */
-
+@import url(_typo.css);
 
 /* Grille
    ========================================================================== */
+@import url(_grille.css);
 
+/* Formulaire
+   ========================================================================== */
+@import url(_form.css);
 
 /* Mise en page
    ========================================================================== */
