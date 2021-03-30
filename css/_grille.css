@@ -16,6 +16,35 @@
     align-items:stretch; /* valeur par défaut */
 }
 
+.nomComplet .rangee,
+.telephone .rangee,
+.date .rangee {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.nomComplet .cols_6_de_12 {
+    flex-basis: 49%;
+}
+
+.telephone .cols_1_de_12 {
+    flex-basis: 6.5%;
+}
+
+.telephone .cols_3_de_12 {
+    flex-basis: 23.5%;
+}
+
+.date .cols_4_de_12 {
+    flex-basis: 32%;
+}
+
+.telephone .cols_8_de_12 {
+    flex-basis: 66%;
+}
+
 /*** Classes pour dimensionner les blocs sur l'écran large ***/
 @media (min-width: 600px) {
 

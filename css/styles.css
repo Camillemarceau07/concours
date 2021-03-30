@@ -10,6 +10,8 @@
  * Grille
  * Formulaire
  * Mise en page
+ * Formulaire
+    * boutons radio
  ***
  ***
  ***
@@ -35,3 +37,154 @@
 
 /* Mise en page
    ========================================================================== */
+
+html {
+    background-image: linear-gradient(var(--vert-fonce), #FBFFEA);
+}
+
+.conteneur {
+    box-shadow: 5px 5px 10px grey;
+}
+
+picture {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: white;
+    margin: -1rem 0 0 0;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+}
+
+h1,
+aside {
+    padding: 0 1rem 0 1rem;
+    margin: 0;
+}
+
+@media (min-width: 600px) {
+
+    aside {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 1rem;
+    }
+
+    form {
+        margin-top: -5rem;
+    }
+}
+
+/* Formulaire
+   ========================================================================== */
+
+.couponParticipation {
+    background-color: #e9e9e9;
+    border: none;
+    border-radius: 1rem;
+    padding-top: 0;
+    margin-top:0;
+}
+
+.h2 {
+    padding-top: 5rem;
+}
+
+fieldset {
+    margin-top: 2rem;
+    border-radius: 1rem;
+    border-color: black;
+}
+
+legend {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+label {
+    display: block;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+input[type=number],
+select {
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+input {
+    border-color: white;
+}
+
+input[type=text]:focus,
+input[type=email]:focus,
+input[type=tel]:focus,
+input[type=number]:focus,
+select:focus {
+    outline : #349194 auto 5px;
+}
+
+select {
+    padding: 0.1rem;
+}
+
+.telephone p {
+    display: inline-block;
+}
+
+.tiret {
+    margin-top: 4.3rem;
+    padding-left: 1rem;
+}
+
+/*----------- boutons radio -----------*/
+ul li {
+    list-style: none;
+}
+
+label img {
+    filter: grayscale(100%);
+    display: block;
+    width: 100%;
+}
+
+input[type=radio]:focus + label img,
+input[type=radio]:hover + label img {
+    filter: none;
+}
+
+input[type=radio]:checked + label {
+    filter: none;
+    border: 1px solid black;
+}
+
+.monuments {
+    padding: 0rem;
+}
+
+.monuments li {
+    padding: 1rem;
+}
+/*-----------------------------------*/
+
+.checkbox label {
+    display: inline;
+}
+
+button {
+    border-radius: 1rem;
+    height: 4rem;
+    border: 1px solid grey;
+    background-color: var(--vert-fonce);
+    font-weight: bold;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}

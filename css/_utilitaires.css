@@ -4,6 +4,8 @@
 /****** Variables (peuvent être utilisées dans tous les fichiers) *******/
 :root {
     --couleur-texte: #000;
+    --vert-fonce: #93C9B7;
+
 }
 
 /*** Clearfix ***/
